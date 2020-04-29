@@ -5,11 +5,20 @@ body{
 }
 #container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 90vh;    
     
+}
+#back{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+.back:hover{
+    color: blue;
+    cursor: pointer;
 }
 #main{
     display: flex;
@@ -24,12 +33,6 @@ body{
     width: 100%;
     height: 70%;
     
-}
-
-#bottom{
-    display: flex;
-    flex-direction: column;
-    height: 20%;
 }
 
 #left,#right{
@@ -47,18 +50,31 @@ body{
 #left{
     border-radius: 40px 0px 0px 0px;
 }
-#up,#down{
-    display: flex;
-    width: 100%;
-    height: 70%;
-    background: whitesmoke;       
-}
-
 #up{
-    background: #006680;
-    height: 15%;
+    height: 10px;
+    background:#01566b;
 }
-
+#down{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    background: whitesmoke;    
+    margin-top: 0.1rem;   
+}
+#arrow{
+    display: flex;
+    align-items: center;
+}
+#arrosvg{
+    z-index: 0;
+}
+#arrowtext{
+    z-index: 1;
+    margin-left: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+}
 .column{
     display: flex;
     flex-direction: column;
@@ -83,30 +99,75 @@ body{
 }
 
 #you,#ai{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 40%;   
+    display: flex;    
+    align-items: center;       
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
-#ai{
-    justify-content: flex-end;
-}
-#go{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;    
-}
-
 .circle{
     display: flex;
     align-items: center;    
     background: crimson;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 
 .red{
     background: yellow;
+}
+
+@media(max-width: 620px){
+    #main{
+        width: 100%;
+        height: 500px;        
+    }
+    .row{        
+        height: 45px;
+        width: 45px;        
+    }    
+    .circle{    
+        background: crimson;
+        width: 40px;
+        height: 40px;        
+    }
+    .red{
+        background: yellow;
+    }    
+}
+@media(max-width: 485px){
+    #main{
+        width: 100%;
+        height: 500px;        
+    }
+    .row{        
+        height: 40px;
+        width: 40px;        
+    }    
+    .circle{    
+        background: crimson;
+        width: 35px;
+        height: 35px;        
+    }
+    .red{
+        background: yellow;
+    }    
+}
+@media(max-width: 400px){
+    #main{
+        width: 100%;
+        height: 500px;        
+    }
+    .row{        
+        height: 35px;
+        width: 35px;        
+    }    
+    .circle{    
+        background: crimson;
+        width: 30px;
+        height: 30px;        
+    }
+    .red{
+        background: yellow;
+    }    
 }

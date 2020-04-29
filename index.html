@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Four In Line</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
+<header>
+    <div id="back" class="back">&larr;BACK</div>
+</header>
 <body>
-    <div id="container">
+    <div id="container">     
+        
+
         <div id="main">   
             <div id="top">
                 <div id="left"></div>
@@ -72,19 +77,22 @@
                 </div>
                 <div id="right"></div>
             </div>
-            <div id="bottom">
-                <div id="up"></div>
-                <div id="down">
-                    <div id="you">
-                        <div class="circle"></div>
-                        <p>You</p>
-                    </div>
-                    <div id="go">GO!</div>
-                    <div id="ai">
-                        <p>AI</p>
-                        <div class="circle red"></div>
-                    </div>
+            <div id="up"></div>
+            <div id="down">
+                <div id="you">
+                    <div class="circle"></div>
+                    <p>You</p>
                 </div>
+                <div id="arrow">
+                    <a id="arrowtext">GO!</a>
+                    <img id="arrowsvg" src="turn-arrow-1.svg">
+                </div>
+                
+                <div id="ai">
+                    <p>AI</p>
+                    <div class="circle red"></div>
+                </div>
+                
             </div>
         </div>
     </div>
