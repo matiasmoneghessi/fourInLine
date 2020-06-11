@@ -7,15 +7,15 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: space-between;
     align-items: center;    
-    height: 100vh;
+    height: 90vh;
 }
 
 .back{
     display: flex;
-    justify-content: center;
-    
+    align-self: flex-start;    
 }
 
 .back a{
@@ -139,7 +139,8 @@ height: 10%;
 
 .links {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    padding: 5px;
 }
 
 .links button {
